@@ -1,7 +1,6 @@
 # PACZero: PAC-Private Fine-Tuning of Language Models via Sign Quantization
 
-This repository is the official anonymous code release for the NeurIPS 2026
-submission *PACZero: PAC-Private Fine-Tuning of Language Models via Sign
+This repository is the official code release for the paper *PACZero: PAC-Private Fine-Tuning of Language Models via Sign
 Quantization*. It contains the training/evaluation code for both the PAC-MI
 and PAC-ZPL variants of our mechanism, our in-house reproductions of the
 two DP zeroth-order baselines we compare against (DPZero, DP-AggZO), and a
@@ -162,3 +161,4 @@ The forked DP-AggZO baseline retains its upstream license (see
 `baselines/dp-aggzo/LICENSE`). The PACZero-original code is released for
 review under an MIT-style license (full text to be added in the
 camera-ready release).
+
