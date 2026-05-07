@@ -1,0 +1,28 @@
+# PACZero — Python dependencies (Python 3.9, CUDA 12.1).
+# transformers is pinned to 4.28.1 because we import internal trainer APIs
+# (transformers.trainer_callback, trainer_pt_utils, trainer_utils) that have
+# been refactored in later releases.
+# setuptools is pinned <80 because transformers 4.28.1 still imports
+# pkg_resources, which was removed in setuptools 80.
+
+# Core DL stack
+torch==2.4.0
+transformers==4.28.1
+accelerate==0.17.1
+datasets==2.16.1
+tokenizers==0.13.3
+huggingface-hub==0.20.2
+
+# Numerics
+numpy==1.26.3
+scipy>=1.10
+
+# Trainer ancillaries
+packaging
+tqdm==4.66.1
+scikit-learn==1.3.2
+setuptools<80
+
+# DP baselines (DPZero K=1, DP-AggZO K=64) only
+opacus==1.4.0
+opt-einsum==3.3.0

@@ -1,0 +1,74 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.egg-info/
+*.egg
+.eggs/
+build/
+dist/
+
+# Virtual envs
+.venv/
+venv/
+env/
+.python-version
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Run outputs (regenerated on each run; not part of the code release)
+result/
+runs/
+checkpoints/
+*.metrics.json
+metrics.json
+done.txt
+
+# HF / dataset caches (large; users will repopulate from HF Hub)
+.hfcache/
+.cache/
+hf_cache/
+
+# Local temp / scratch
+tmp/
+.tmp/
+*.tmp
+*.log
+*.out
+*.err
+
+# SLURM / cluster artefacts (not portable; users will write their own)
+slurm-*.out
+slurm-*.err
+*.sbatch.out
+
+# Environment / secrets — do NOT commit
+.env
+.env.*
+*.pem
+*.key
+*_token
+.hf_env
+
+# Auto-generated docs
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.fdb_latexmk
+*.fls
+*.synctex.gz
+
+# DP baseline (cloned by setup.sh; not vendored)
+baselines/dp-aggzo/
